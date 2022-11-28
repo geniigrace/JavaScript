@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>position</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+
+            p{
+                width: 500px;
+                height: 200px;
+                background-color: #eee;
+                border: 1px solid #ccc;
+               line-height: 2;
+            }
+
+            #static{
+                position: static;
+            }
+
+            #relative-1{
+                position: relative;
+            }
+
+            #relative-2{
+                position: relative;
+                left: 100px;
+                top: -10px;
+            }
+
+            #fixed{
+                width: 100px;
+                height: 100px;
+                background-color: rgb(255, 251, 6);
+                position: fixed;
+                right: 30px;
+                top: 30px;
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <p id="static">static
+            <small>껍질</small>에 붉은 빛이 돌아 <strong>레드향</strong>이라 불린다. 레드향은 <em>한라봉과 귤</em>을 교배한 것으로 <br>크고 과육이 붉고 통통하다. 비타민C와 비타민P가 풍부해 <b>혈액순환, 감기예방</b>등에 좋은 것으로 알려져 있다.</p>
+
+        <p id="relative-1">relative1
+            <small>껍질</small>에 붉은 빛이 돌아 <strong>레드향</strong>이라 불린다. 레드향은 <em>한라봉과 귤</em>을 교배한 것으로 <br>크고 과육이 붉고 통통하다. 비타민C와 비타민P가 풍부해 <b>혈액순환, 감기예방</b>등에 좋은 것으로 알려져 있다.</p>
+
+        <p id="relative-2">relative2
+            <small>껍질</small>에 붉은 빛이 돌아 <strong>레드향</strong>이라 불린다. 레드향은 <em>한라봉과 귤</em>을 교배한 것으로 <br>크고 과육이 붉고 통통하다. 비타민C와 비타민P가 풍부해 <b>혈액순환, 감기예방</b>등에 좋은 것으로 알려져 있다.</p>
+
+        <p id="fixed">fixed
+            <small>껍질</small>에 붉은 빛이 돌아 <strong>레드향</strong>이라 불린다. 레드향은 <em>한라봉과 귤</em>을 교배한 것으로 <br>크고 과육이 붉고 통통하다. 비타민C와 비타민P가 풍부해 <b>혈액순환, 감기예방</b>등에 좋은 것으로 알려져 있다.</p>
+
+    </body>
+</html>
