@@ -1,0 +1,44 @@
+<!DOCTYPE html> 
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>position 속성</title>
+        <style>
+        div{
+            margin: 20px;
+        }
+        .desc{
+            border: 4px dotted #222;
+            background-color: #ffd9a0;
+            width: 350px;
+            padding: 20px;
+            margin-right: 20px;
+            float: left;
+        }
+        #clip-border{
+            background-clip: border-box;
+        }
+        #clip-padding{
+            background-clip: padding-box;
+        }
+        #clip-content{
+            background-clip: content-box;
+        }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div class="desc" id="clip-border">
+                <h1>레드향 </h1>
+                <p> 레드향과 탐라국</p>
+            </div>
+            <div class="desc" id="clip-padding">
+                <h1>레드향 </h1>
+                <p> 레드향과 탐라국</p>
+            </div>
+            <div class="desc" id="clip-content">
+                <h1>레드향 </h1>
+                <p> 레드향과 탐라국</p>
+            </div>
+        </div>
+    </body>
