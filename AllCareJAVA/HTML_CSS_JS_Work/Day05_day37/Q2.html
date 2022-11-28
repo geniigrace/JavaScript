@@ -4,8 +4,17 @@
         <meta charset="utf-8">
         <title>Q2</title>
         <style>
-            #title{
+            *{ /*기본 세팅*/
+                margin: 0px;
+                padding: 0px;
+                box-sizing: border-box;
+            }
+            #container{ /*부모로 감싸주면 화면이 작아져도 다음줄로 넘어가지 않음*/
                 width: 1200px;
+                height: 820px;
+            }
+            #title{
+                width: 100%;
                 height: 120px;
                 background: rgb(37, 37, 37);
             }
@@ -22,16 +31,18 @@
                 float: left;
             }
             #footer{
-                width: 1200px;
+                width: 100%;
                 height: 100px;
                 background: rgb(37, 37, 37);
                 clear: left;
             }
             </style>
             <body>
+                <div id="container">
                 <div id="title"><h1>사이트제목</h1></div>
                 <div id="sidebar">사이드바</div>
                 <div id="main"><h2>본문</h2></div>
                 <div id="footer"><h3>푸터</h3></div>
+                </div>
             </body>
             </head>
