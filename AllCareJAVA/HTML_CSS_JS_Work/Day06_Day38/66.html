@@ -1,0 +1,49 @@
+<!DOCTYPE html> 
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>bg cover</title>
+        <style>
+            #container{
+                width: 1100px;
+                margin: 50px auto;
+            }
+            .box{
+                float: left;
+                border: 1px solid #222;
+                width: 300px;
+                height: 300px;
+                margin: 20px;
+                background: url('img/bg4.jpg') no-repeat left top;
+            }
+
+            #bg1{
+                background-size: auto;
+            }
+            #bg2{
+                background-size: 200px;
+            }
+            #bg3{
+                background-size: 50%;
+            }
+            #bg4{
+                background-size: 100% 100%;
+            }
+            #bg5{
+                background-size: contain;
+            }
+            #bg6{
+                background-size: cover;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div class="box" id="bg1"></div>
+            <div class="box" id="bg2"></div>
+            <div class="box" id="bg3"></div>
+            <div class="box" id="bg4"></div>
+            <div class="box" id="bg5"></div>
+            <div class="box" id="bg6"></div>
+    </body>
+</html>
