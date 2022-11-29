@@ -1,0 +1,51 @@
+<!DOCTYPE html> 
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>bgimg</title>
+        <style>
+            body{
+                background-image: url('img/bg2.png');
+                background-repeat: no-repeat;
+                background-position: right top;
+                background-attachment:fixed;
+            }
+            div{ /*기본적으로 div에서 지정하는 가로,세로 사이즈는 컨텐츠 영역 */
+                width: 400px;
+                height: 250px;
+                padding: 20px;
+                border: 20px solid rgba(204,204,204,0.493);
+                margin-bottom: 20px;
+                overflow: auto;
+                background-image: url('img/bg3.png');
+                background-repeat: no-repeat;
+                background-position: right top;               
+            }
+            #bg1{
+                background-origin: padding-box;
+            }
+            #bg2{
+                background-origin: border-box;
+            }
+            #bg3{
+                background-origin: content-box;
+            }
+            </style>
+            </head>
+            <body>
+                <div id="bg1">
+                    <h2>바빠시리즈</h2>
+                    <h3>바쁜 학생들을 위한 빠른 학습법</h3>
+                    <P>쉬운 내용은 압축하여 빠르게 </P>
+                </div>
+                <div id="bg2">
+                    <h2>바빠시리즈</h2>
+                    <h3>바쁜 학생들을 위한 빠른 학습법</h3>
+                    <P>쉬운 내용은 압축하여 빠르게 </P>
+                </div>
+                <div id="bg3">
+                    <h2>바빠시리즈</h2>
+                    <h3>바쁜 학생들을 위한 빠른 학습법</h3>
+                    <P>쉬운 내용은 압축하여 빠르게 </P>
+                </div>
+            </body>
