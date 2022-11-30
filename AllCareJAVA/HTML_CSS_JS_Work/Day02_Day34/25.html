@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>주문하기</title>
+    <link rel="stylesheet" href="css/order.css" />
+  </head>
+  <body>
+    <label for="memo">메모</label>
+    <br />
+    <textarea id="memo" cols="40" rows="4"></textarea>
+    <form action="">
+      <label for="prod1">상품선택</label>
+      <select id="prod1">
+        <!--드롭다운-->
+        <option value="special_3" selected>선물용 3kg</option>
+        <option value="special_5">선물용 5kg</option>
+        <option value="family_3">가정용 3kg</option>
+        <option value="family_5">가정용 5kg</option>
+      </select>
+      <hr />
+      <label for="prod2">포장여부</label>
+      <input type="text" id="prod2" list="pack" />
+      <datalist id="pack">
+        <!--datalist : 드롭다운에서 검색이 가능함 -->
+        <option value="선물 포장">에어포켓 포장으로 배송</option>
+        <option value="abc">abc</option>
+        <option value="포장 안함">포장없이 기본박스로 배송</option>
+      </datalist>
+    </form>
+    <div>
+      <button type="submit">주문하기</button>
+      <button type="reset">취소하기</button>
+    </div>
+  </body>
+</html>
