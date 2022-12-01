@@ -1,0 +1,44 @@
+<!DOCTYPE html> 
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>속성선택자 </title>
+        <style>
+            ul{
+                list-style: none;
+            }
+            li{
+                width: 120px;
+                display: inline-block;
+                margin: 10px;
+            }
+
+            li a{
+                padding: 5px 20px;
+                font-size: 14px;
+                text-decoration: none;
+                font-weight: bold;
+            }
+
+            a[href]{
+                background: yellow;
+                border: 1px solid #ccc;
+                font-weight: normal;
+            }
+
+            a[target="_blank"]{
+                color: red;
+            }
+
+            </style>
+            </head>
+            <body>
+                <ul>
+                    <li><a>메인메뉴 : </a></li>
+                    <li><a href="#" target="_blank">메뉴1</a></li>
+                    <li><a href="#"">메뉴2</a></li>
+                    <li><a href="#"">메뉴3</a></li>
+                    <li><a href="#"">메뉴4</a></li>
+                </ul>
+            </body>
+</html>

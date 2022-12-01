@@ -1,0 +1,37 @@
+<!DOCTYPE html> 
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>속성선택자 </title>
+        <style>
+            ul{
+                list-style:square;
+            }
+
+            
+            li a{
+                line-height: 30px;
+                font-size: 14px;
+                color: blue;
+                text-decoration: none;
+            }
+
+            a[href$=hwp]{
+                background: url(img/hwp_icon.gif) center right no-repeat;
+                padding-right: 25px;
+            }
+
+            a[href$=xls]{
+                background: url(img/excel_icon.gif) center right no-repeat;
+                padding-right: 25px;
+            }
+            </style>
+            </head>
+            <body>
+                <ul>
+                    <li>파일 내려받기</li>
+                    <li><a href="intro.hwp"> hwp파일</a></li>
+                    <li><a href="intro.xls"> 엑셀파일 </a></li>
+                </ul>
+            </body>
+            </html>
