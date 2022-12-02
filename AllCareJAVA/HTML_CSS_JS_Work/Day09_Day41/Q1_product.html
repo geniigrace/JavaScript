@@ -6,28 +6,40 @@
   <title>상품 갤러리 만들기</title>
 </head>
 <style>
+    * {
+     box-sizing: border-box;
+     }
+
+     body{
+
+      background-color: #eee;
+      font-size: 16px;
+
+     }
     .wrapper{
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-        margin-bottom: 20px;
-        grid-gap: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        grid-gap: 1rem; /*반응형웹에서 자동적으로 갭을 주는 것*/
 
     }
 
     .card{
         border: 1px solid #ccc;
         box-shadow: 0 0 1em rgb(214, 213, 213);
-        padding: 10px;
+        padding: 0.5rem;
     }
-
-    p{
-        padding: 10px;
+    .card > header{
+      font-size: 1.5rem;
+      padding: 0.5rem;
     }
-    figure{
+    .card > p{
+        padding: 0.5rem;
+    }
+   .card > figure{
       display: flex;
     }
 
-    .item{
+    .card > .item{
       align-content: center; /*중앙*/
     }
 
