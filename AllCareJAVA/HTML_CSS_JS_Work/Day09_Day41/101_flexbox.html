@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="veiwport" content="width=device-width", initial-scale="1.0">
+    <title>플렉서블 박스 레이아웃</title>
+    <style>
+        .container{
+            width: 450px;
+            height: 150px;
+            background-color: #eee;
+            border: 1px solid #222;
+            margin-bottom: 20px;
+            display: flex; /* 플렉스 사용하려면 부모에 정의되어야 함 */
+            align-items: center; /*교차축 중앙에 위치*/
+        }
+        .box{
+            padding: 5px 45px;
+            margin: 5px;
+            background-color: #222;
+        }
+        
+        #box1{align-self: flex-start;} /* 교차축 시작점 */
+        #box2{align-self: flex-end;} /* 교차축 끝점 */
+        #box3{align-self: stretch;} /* 교차축 꽉 차게 */
+
+        p{
+            color: #fff;
+            text-align: center;
+        }
+        </style>
+        </head>
+        <body>
+            <div class="container">
+                <div class="box" id="box1"><p>1</p></div>
+                <div class="box" id="box2"><p>2</p></div>
+                <div class="box" id="box3"><p>3</p></div>
+                <div class="box"><p>4</p></div>
+                </div>
+        </body>
