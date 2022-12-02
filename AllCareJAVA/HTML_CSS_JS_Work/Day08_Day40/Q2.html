@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <title>Q2</title>
+    <style>
+      ul {
+        list-style: none;
+      }
+      li {
+        float: left;
+      }
+      li:nth-last-child(1) a:hover {
+        background-color: darkred;
+        color: #fff;
+        transition: 0.5s ease-in;
+      }
+      a {
+        display: block;
+        padding: 8px 35px;
+        background-color: #eee;
+        border-left: 1px solid #ccc;
+        box-shadow: 2px 2px 5px #ccc;
+      }
+      a:first-child {
+        border-left: none;
+      }
+      a:link {
+        font-size: small;
+        color: black;
+        text-decoration: none;
+      }
+
+      li:not(nth-last-child) a:hover {
+        background-color: rgb(3, 3, 3);
+        color: #fff;
+        font-weight: bold;
+        font-style: italic;
+        transition: 0.5s ease-in;
+      }
+    </style>
+    <body>
+      <ul>
+        <li><a href="#">메뉴1</a></li>
+        <li><a href="#">메뉴2</a></li>
+        <li><a href="#">메뉴3</a></li>
+        <li><a href="#">메뉴4</a></li>
+        <li><a href="#">메뉴5</a></li>
+        <li><a href="#">메뉴6</a></li>
+      </ul>
+    </body>
+  </head>
+</html>
