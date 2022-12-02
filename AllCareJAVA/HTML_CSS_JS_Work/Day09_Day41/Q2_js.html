@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="veiwport" content="width=device-width", initial-scale="1.0">
+    <title>자리배치도</title>
+    </head>
+    <body>
+        <script>
+            var total;
+            var num;
+            var result;
+
+            total=prompt("입장객은 몇 명인가요?");
+            num=prompt("한 줄에 몇 명씩 앉습니까?");
+            document.write("<h1> 자리배치도 </h1>");
+            if((total%num)!=0){
+                result=parseInt(total/num)+1;
+            }
+            else{
+                result=parseInt(total/num);
+            }
+            document.write("<p> 모두 "+result +"개의 줄이 필요합니다.");
+                </script>
+                </body>
+                </html>
