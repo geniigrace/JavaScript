@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="veiwport" content="width=device-width", initial-scale="1.0">
+    <title>플렉서블 박스 레이아웃</title>
+    <style>
+        #wrapper1{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            /*화면을 꽉 채울만큼 칼럼 너비를 늘려서 표시*/
+            margin-bottom: 20px;
+        }
+        #wrapper2{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+            /*칼럼 최소 너비만큼 채워서 표시*/
+        }
+
+        h1{font-size: 24px;}
+
+        .items{
+            padding: 15px;
+            background-color: #eee;
+            margin-left: 5px;
+            margin-bottom: 5px;
+        }
+
+        .items:nth-child(odd){
+            background-color: #bbb;
+        }
+
+        </style>
+        <body>
+            <h1>auto-fit일 때</h1>
+            <div id="wrapper1">
+            <div class="items">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</div>
+            <div class="items">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</div>
+            <div class="items">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</div>
+            <div class="items">Lorem ipsum dolor sit ame Lorem ipsum dolor sit amett</div>
+            <div class="items">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</div>
+            </div>
+
+            <h1>auto-fill일 때</h1>
+            <div id="wrapper2">
+            <div class="items">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</div>
+            <div class="items">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</div>
+            <div class="items">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</div>
+            <div class="items">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</div>
+            <div class="items">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</div>
+            </div>
+        </body>

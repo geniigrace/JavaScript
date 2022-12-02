@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="veiwport" content="width=device-width", initial-scale="1.0">
+    <title>플렉서블 박스 레이아웃</title>
+    <style>
+        #wrapper{
+            width: 600px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            /* 너비 200px 칼럼 3개 (전체가 600인데 개로 나눔) fr은 상대적 크기*/
+            grid-template-rows: 100px;
+            /*줄높이 100px*/
+        }
+
+        .items{
+            margin-left: 5px;
+            padding: 10px;
+            background-color: #eee;
+        }
+        .items:nth-child(odd){
+            background-color: #bbb;
+        }
+        </style>
+        </head>
+        <body>
+            <div id="wrapper">
+                <div class="items">Lorem, issum dolor.</div>
+                <div class="items">Lorem, issum dolor.</div>
+                <div class="items">Lorem, issum dolor.</div>
+                <div class="items">Lorem, issum dolor.</div>
+                <div class="items">Lorem, issum dolor.</div>
+            </div>
+        </body>

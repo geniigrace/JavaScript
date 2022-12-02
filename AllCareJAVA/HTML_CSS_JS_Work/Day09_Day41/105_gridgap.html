@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="veiwport" content="width=device-width", initial-scale="1.0">
+    <title>플렉서블 박스 레이아웃</title>
+    <style>
+        #wrapper{
+            display: grid;
+            grid-template-columns: repeat(3, 200px);
+            grid-template-rows: minmax(100px, auto);
+            grid-gap: 20px 30px;
+        }
+        
+        .items{
+            padding: 15px;
+            background-color: #eee;
+        }
+
+        .items:nth-child(odd){
+            background-color: #bbb;
+        }
+
+        </style>
+        <body>
+
+            <div id="wrapper">
+            <div class="items">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</div>
+            <div class="items">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</div>
+            <div class="items">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</div>
+            <div class="items"> dolor sit amett</div>
+            <div class="items">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</div>
+            <div class="items">Lorem ipsum dolor sit ame Lorem ipsum dolor sit amett</div>
+            <div class="items"> sit amet</div>
+            
+        </div>
+
+        </body>
