@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>link 스타일</title>
+    <style>
+      .container {
+        width: 960px;
+        margin: 0 auto;
+      }
+      ul li {
+        margin: 15px;
+      }
+      li.new::after {
+        content: "NEW!!";
+        font-size: x-small;
+        padding: 2px 4px;
+        margin: 0 10px;
+        border-radius: 2px;
+        background-color: yellow;
+        border: 1px solid red;
+        color: #000;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>제품목록</h1>
+      <ul>
+        <li class="new">제품 A</li>
+        <li>제품 B</li>
+        <li>제품 C</li>
+        <li class="new">제품 D</li>
+      </ul>
+    </div>
+  </body>
+</html>
