@@ -22,19 +22,14 @@
                 var count=0; 
                 input=prompt("몇 까지 3의 배수를 찾을 까요?");
                 for(i=1; i<=input; i++){
-                    if(i!=input){
+
                         if(i%3===0){
                             document.write(i+", ");
                             count++;
-                        } continue;
+                        } 
                     }
-                    else{
-                        if(i%3===0){
-                            document.write(i+" ");
-                            count++;
-                        } continue;
-                    }
-                }
+
+                
                 document.write("<p>"+input+"까지 3의 배수의 개수 : "+count+"</p>");
             </script>
         </body>
