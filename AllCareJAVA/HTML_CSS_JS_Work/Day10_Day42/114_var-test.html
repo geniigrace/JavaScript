@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="uft-8">
+        <meta name="veiwport" content="width=device-width", initial-scale="1.0">
+        <title>변수</title>
+    </head>
+    <body>
+        <script>
+            function addNumber(num1, num2){
+                //var a =10; //지역변수
+                b = 20; //전역변수 
+                return num1+num2;
+            }
+
+            var sum = addNumber(10,20);
+            console.log(sum);
+
+            sum=50;
+            console.log(sum);
+
+            sum=100;
+            console.log(sum);
+
+            //console.log(a); //오류, 함수의 지역변수이므로 바디에서 선언된게 없다고 인식됨 
+            console.log(b);
+
+            </script>
+            </body>
+            </html>

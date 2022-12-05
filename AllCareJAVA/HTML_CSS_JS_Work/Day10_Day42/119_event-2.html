@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="uft-8">
+        <meta name="veiwport" content="width=device-width", initial-scale="1.0">
+        <title>이벤트처리</title>
+        <link rel="stylesheet" href="css/function.css">
+        </head>
+        <body>
+            <ul>
+                <li><a href="#" onclick="changeBg('green')">green</a></li>
+                <li><a href="#" onclick="changeBg('orange')">orange</a></li>
+                <li><a href="#" onclick="changeBg('purple')">purple</a></li>
+                <li><a href="#" onclick="changeBg('blue')">blue</a></li>
+            </ul>
+            <div id="result"></div>
+            <script>
+                function changeBg(color){
+                    var a=document.querySelector('#result');
+                    //id가 result 인 객체를 선택
+
+                    a.style.backgroundColor=color;
+                    //a의 배경화면 색상을 매개변수 color로 설정 
+                }
+
+            </script>
+            </body>
+            </html>

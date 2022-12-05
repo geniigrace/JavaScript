@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="uft-8">
+        <meta name="veiwport" content="width=device-width", initial-scale="1.0">
+        <title>이벤트처리</title>
+        <style>
+            div{
+                width: 400px;
+                height: 300px;
+                margin: auto;
+            }
+
+            #image{
+                border: 1px solid gray;
+                padding: 0;
+                position: relative;
+            }
+
+            #contents{
+                position: relative;
+                display: block;
+            }
+
+           #button1{
+            border: 1px solid #222;
+            background-color: rgba(255,255,255,0.5);
+            width: 100px;
+            height: 20px;
+            margin: 10px;
+            text-align: center;
+            padding-top: 4px;
+            padding-bottom: 3px;
+            position: absolute;
+            bottom: 5px;
+
+           }
+
+           #button2{
+            border: 1px solid #222;
+            background-color: rgba(255,255,255,0.5);
+            width: 100px;
+            height: 20px;
+            margin: 10px;
+            text-align: center;
+            padding-top: 4px;
+            padding-bottom: 3px;
+            position: absolute;
+            top: 100px;
+           }
+
+        </style>
+        <script>
+            function open(){
+                document.querySelector("#contents").style.display="block";
+             
+            }
+
+            function close(){
+                document.querySelector("#contents").style.display="none";
+            }
+        </script>
+        </head>
+        <body>
+            <div id="image"><img src="img/flower.jpeg">
+                <div id="button1" onclick="open()">상세 설명 보기</div>
+            </div>
+            
+
+            <div id="contents">
+                <h3>등심붓꽃</h3>
+                <p>북아메리카 원산으로 각지에서 관상초로 흔히 심고있는 귀화식물이다.</p>
+                <div id="button2" onclick="close()">상세 설명 닫기</div>
+            </div>
+
+            </body>
+            </html>
