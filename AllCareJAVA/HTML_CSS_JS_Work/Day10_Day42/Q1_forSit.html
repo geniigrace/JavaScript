@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="uft-8">
+        <meta name="veiwport" content="width=device-width", initial-scale="1.0">
+        <title>자리배치도</title>
+        <style>
+            
+            table{
+                border: 1px solid #222;
+                border-collapse: collapse;
+            }
+            tr{
+                border: 1px dotted #222;
+            }
+            td{
+                border: 1px dotted #222;
+                padding: 10px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <script>
+            var total;
+            var num; //가로
+            var result; //세로
+
+            total=prompt("입장객은 몇 명인가요?");
+            num=prompt("한 줄에 몇 명씩 앉습니까?");
+            document.write("<h1> 자리배치도 </h1>");
+            if((total%num)!=0){
+                result=parseInt(total/num)+1;
+            }
+            else{
+                result=parseInt(total/num);
+            }
+            document.write("입장객 총 "+total+"명 <br>한 줄 정원 총 "+num+"명 <p> 모두 "+result +"개의 줄이 필요합니다.");
+            
+            var i, j;
+            var x=1;
+            document.write("<table>");
+            for(i=1; i<=result; i++){
+                document.write("<tr>");
+                    for(j=1; j<=num; j++){
+                        if(x<=total){
+                        document.write("<td>좌석 "+x++ +"</td>");
+                        }
+                       // else{
+                       //    document.write("<td></td>");
+                        //}
+                        }
+                    
+                    document.write("</tr>");
+            }
+            
+            
+                </script>
