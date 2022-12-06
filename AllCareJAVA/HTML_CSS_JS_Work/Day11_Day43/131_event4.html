@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="uft-8">
+        <meta name="veiwport" content="width=device-width", initial-scale="1.0">
+        <title>event</title>
+        </head>
+        <body>
+            <div id="container">
+                <img src="img/easys-1.jpg" id="cover">
+
+            </div>
+            <script>
+                var cover=document.getElementById("cover");
+                cover.addEventListener("mouseover",function(){
+                    cover.src="img/easys-2.jpg";
+                })
+
+                cover.addEventListener("mouseout", function(){
+                    cover.src="img/easys-1.jpg"
+                })
+            </script>
+        </body>

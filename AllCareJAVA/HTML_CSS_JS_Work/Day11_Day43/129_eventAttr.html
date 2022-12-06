@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="uft-8">
+        <meta name="veiwport" content="width=device-width", initial-scale="1.0">
+        <title>Attr</title>
+        <style>
+        </style>
+        </head>
+        <body>
+            <div id="container">
+                <img src="img/cup-1.png" id="cup">
+
+            </div>
+            <script>
+                var cup=document.querySelector("#cup");
+                cup.onclick = changePic;
+
+                var check=true;
+                function changePic(){
+                    if(check){
+                        cup.src="img/cup-2.png";
+                        check=false;
+                    }
+                    else{
+                        cup.src="img/cup-1.png"
+                        check=true;
+                    }
+                }
+            </script>
+            
+        </body>
+        </html>
