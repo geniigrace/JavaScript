@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="uft-8">
+        <meta name="veiwport" content="width=device-width", initial-scale="1.0">
+        <title>inner</title>
+        <style>
+        </style>
+        </head>
+        <body>
+            <button onclick="inntext()">innerText로 표시하기</button>
+            <button onclick="innhtml()">innerHTML로 표시하기</button>
+            <h1>현재 시각 : </h1>
+            <div id="current"></div>
+            <script>
+                var now=new Date();
+
+                function inntext(){
+                    document.getElementById("current").innerText=now;
+                }
+
+                function innhtml(){
+                    document.getElementById("current").innerHTML="<i>"+now+"</i>";
+                }
+            </script>
+            </body>
+            </html>
