@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="uft-8">
+        <meta name="veiwport" content="width=device-width", initial-scale="1.0">
+        <title>배열객체</title>
+        
+        <body>
+            <script>
+                var nums=[1,2,3];
+                var chars=["a","b","c","d"];
+
+                var numsChars=nums.concat(chars);
+                var charsNum=chars.concat(nums);
+                document.write("nums 에 char 합치면 : ",numsChars,"<br>chars 에 nums 합치면 : ",charsNum);
+                document.write("<hr>");
+
+                var string1 = nums.join();
+                document.write("구분자 없이 : ",string1);
+                document.write("<br>");
+
+                var string2=chars.join('/');
+                document.write("/구분자 지정 : ",string2);
+                document.write("<hr>");
+
+                var ret1=nums.push(4,5);
+                document.write("length : ", ret1,"|배열 : ",nums);
+                document.write("<br>");
+
+                var ret2 = nums.unshift(0);
+                document.write("length : ", ret2, "|배열 : ",nums);
+                document.write("<hr>");
+
+                var popped1 = chars.pop();
+                document.write("꺼낸 요소 : ",popped1," |배열 : ", chars);
+                document.write("<br>");
+                var popped2 = chars.shift();
+                document.write("꺼낸 요소 : ",popped2," |배열 : ", chars);
+                document.write("<hr>");
+
+            </script>
+        </body>

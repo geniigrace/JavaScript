@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="uft-8">
+        <meta name="veiwport" content="width=device-width", initial-scale="1.0">
+        <title>배열객체</title>
+        
+        <body>
+            <script>
+
+                var num=[1,2,3,4,5];
+                var newNum = num.splice(2);
+                document.write("반환된 배열 : ",newNum,"<br>");
+                document.write("변경된 배열 : "+num);
+                document.write("<hr>");
+
+                var study=["html","css","web","jquery"];
+                var newStudy=study.splice(2,1);
+                document.write("반환된 배열 : "+newStudy+"<br>");
+                document.write("변경된 배열 : "+study);
+                document.write("<hr>");
+
+                var newStudy2=study.splice(2,1,"js");
+                document.write("변경된 배열 : "+study);
+                </script>
+        </body></head>
