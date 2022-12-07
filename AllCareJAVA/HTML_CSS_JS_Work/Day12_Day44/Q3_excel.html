@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Q.Table</title>
+</head>
+<style>
+
+form{
+    margin-bottom: 30px;
+}
+
+input[type="text"]{
+    width: 30px;
+    height: 20px;
+    text-align: center;
+}
+
+button{
+    margin-left: 10px;
+}
+table{
+    width: 300px;
+}
+table, td{
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+}
+
+td{
+    padding: 10px;
+}
+
+</style>
+<body>
+<form>
+    <input type="text" id="rCount" value="1"> 행 <!--value 기본값 세팅-->
+    <input type="text" id="cCount" value="1"> 열
+    <button onclick="makeTable()"; return false;>생성</button>
+</form>
+<div id="contents"></div>
+
+<script>
+    var rCount = document.querySelector("#rCount").value;
+</script>
+</body>
+</html>

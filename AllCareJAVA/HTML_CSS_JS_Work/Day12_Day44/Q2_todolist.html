@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Q.to-do list</title>
+</head>
+<style>
+    #container{
+        margin: 20px auto;
+    }
+
+    ul{
+        list-style: none;
+    }
+
+    li{
+        font-size: 1.3em;
+        color: black;
+        padding: 10px;
+        text-decoration: none;
+    }
+</style>
+<body>
+  <div id="container">
+    <h1>할 일 목록</h1>
+    <ul id="list">
+        <li onclick="lineClick()" id="worklist">&check; 할 일 1</li>
+        <li onclick="lineClick()" id="worklist">&check; 할 일 2</li>
+        <li onclick="lineClick()" id="worklist">&check; 할 일 3</li>
+        <li onclick="lineClick()" id="worklist">&check; 할 일 4</li>
+        <li onclick="lineClick()" id="worklist">&check; 할 일 5</li>
+
+    </ul>
+    </div>
+
+    <script>
+        function lineClick(){
+
+            var workList=document.querySelectorAll("#worklist");
+
+            for(i=0; i<workList.length;i++){
+             workList[i].addEventListener("click", function(){
+                 this.style.color="gray";
+                 this.style.textDecoration= "line-through";
+
+                 this.addEventListener("click",function(){
+                    this.style.color="black";
+                    this.style.textDecoration= "none";
+                 })
+             });
+            }
+        }
+    </script>
