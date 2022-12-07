@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="uft-8">
+        <meta name="veiwport" content="width=device-width", initial-scale="1.0">
+        <title>썸네일</title>
+        <style>
+         .row {
+          width:420px;
+          margin:0 auto;
+        }      
+        .row ul {
+          list-style:none;
+          margin:0;
+          padding:0;
+        }
+        .row ul li {
+          display:inline-table;        
+				}
+				
+        /* 라이트 박스 스타일 */
+        #lightbox {
+          position: fixed;  /* 위치 고정 */
+          width:100%;  /* 너비 */
+          height:100%;  /* 높이 */
+          background-color:rgba(0,0,0,0.5);  /* 배경색 */
+          top:0;  /* 시작 위치 - 위쪽 끝 */
+          left:0; /* 시작 위치 - 왼쪽 끝 */
+          display:none;  /* 화면에서 감추기 */
+        }
+
+      /* 라이트 박스 안의 이미지 */
+        #lightbox img {
+          position:absolute;  /* top, left에 의해 위치 지정 */
+          top:50%;  /* 위쪽에서 50% 부터 */
+          left:50%;  /* 왼쪽에서 50% 부터 */
+          transform:translate(-50%, -50%);  /* 요소를 화면 중앙에 표시하기 위해 이동 */
+          border:5px solid #eee; /* 이미지 테두리 */       
+        }
+        </style>
+        </head>
+        <body>
+            
+            <div class="row">
+                <ul>
+                    <li><img src="img/tree-1-thumb.jpg" id="rect"><div id="lightbox"><img src="img/tree-1.jpg" ></div></li>
+                    <li><img src="img/tree-2-thumb.jpg" id="rect"><div id="lightbox"><img src="img/tree-2.jpg" ></div></li>
+                    <li><img src="img/tree-3-thumb.jpg" id="rect"><div id="lightbox"><img src="img/tree-3.jpg" ></div></li>
+                </ul>
+                <ul>
+                    <li><img src="img/tree-4-thumb.jpg" id="rect"><div id="lightbox"><img src="img/tree-4.jpg" ></div></li>
+                    <li><img src="img/tree-5-thumb.jpg" id="rect"><div id="lightbox"><img src="img/tree-5.jpg" ></div></li>
+                    <li><img src="img/tree-6-thumb.jpg" id="rect"><div id="lightbox"><img src="img/tree-6.jpg" ></div></li>
+                </ul>
+               
+            </div>
+            
+
+            <script>
+
+                
+                 var myThumb=document.querySelectorAll("#rect");
+                 var myLightbox=document.querySelectorAll("#lightbox");
+
+                 for(let i=0; i<myThumb.length; i++){
+                    myThumb[i].addEventListener("click",function(){
+                        myLightbox[i].style.display="block";
+
+
+                        myLightbox[i].addEventListener("click",function(){
+                            myLightbox[i].style.display="none";
+                        })
+                    });
+                 }
+
+            
+
+                
+            </script>
+        </body>
+        </html>
