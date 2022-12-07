@@ -4,8 +4,9 @@
         <meta charset="uft-8">
         <meta name="veiwport" content="width=device-width", initial-scale="1.0">
         <title>이벤트처리</title>
+        <link rel="shortcut icon" href="#">
         <style>
-            div{
+            #item{
                 width: 400px;
                 height: 300px;
                 margin: auto;
@@ -17,9 +18,9 @@
                 position: relative;
             }
 
-            #contents{
+            .contents{
                 position: relative;
-                display: block;
+                display: none;
             }
 
            #button1{
@@ -50,28 +51,30 @@
            }
 
         </style>
-        <script>
-            function open(){
-                document.querySelector("#contents").style.display="block";
-             
-            }
-
-            function close(){
-                document.querySelector("#contents").style.display="none";
-            }
-        </script>
+        
         </head>
         <body>
-            <div id="image"><img src="img/flower.jpeg">
-                <div id="button1" onclick="open()">상세 설명 보기</div>
-            </div>
+            <div id="item">
+             <div id="image"><img src="img/flower.jpeg">
+                    <div id="button1" onclick="open()">상세 설명 보기</div>
+                </div>
             
 
-            <div id="contents">
-                <h3>등심붓꽃</h3>
-                <p>북아메리카 원산으로 각지에서 관상초로 흔히 심고있는 귀화식물이다.</p>
-                <div id="button2" onclick="close()">상세 설명 닫기</div>
+             <div class="contents" id="detail">
+                    <h3>등심붓꽃</h3>
+                    <p>북아메리카 원산으로 각지에서 관상초로 흔히 심고있는 귀화식물이다.</p>
+                    <div id="button2" onclick="close()">상세 설명 닫기</div>
+             </div>
             </div>
-
+            <script>
+                function open(){
+                    document.querySelector("#detail").style.display="block";
+                 
+                }
+    
+                function close(){
+                    document.querySelector("#detail").style.display="none";
+                }
+            </script>
             </body>
             </html>
