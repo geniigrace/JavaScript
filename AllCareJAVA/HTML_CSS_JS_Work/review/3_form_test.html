@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>회원가입을 환영합니다.</title>
+        <style>
+            #container{
+                margin: 20px;
+
+            }
+            li{
+                padding: 5px;
+                margin: 3px;
+            }
+
+            label{
+                width: 110px;
+                float: left;
+            }
+
+            li > input{
+                width: 200px
+            }
+            fieldset{
+                margin-bottom: 10px;
+                width: 700px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <h1>회원 가입을 환영합니다.</h1>
+            <form id="signup">
+                <fieldset>
+                    <legend>사용자 정보</legend>
+                    <ul>
+                        <li>
+                            <label for="user_id">아이디</label>
+                            <input id="user_id" type="text" placeholder="4자 ~ 10자 사이, 공백없이" required autofocus>
+                        </li>
+                        <li>
+                            <label for="user_email">이메일</label>
+                            <input id="user_email" type="email">
+                        </li>
+                        <li>
+                            <label for="user_pw">비밀번호</label>
+                            <input id="user_pw" type="password" placeholder="문자와 숫자, 특수 기호 포함">
+                        </li>
+                        <li>
+                            <label for="user_pw">비밀번호 확인</label>
+                            <input id="user_pw" type="password">
+                        </li>
+                        <li>
+                            <label for="user_join">가입 경로</label>
+                            <select id="user_join">
+                                <option value="" selected>가입경로</option>
+                                <option value="blog">블로그</option>
+                                <option value="search">검색</option>
+                                <option value="sns">SNS</option>
+                                <option value="etc">기타</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label for ="memo">메모</label>
+                            <textarea id="memo" cols="40" rows="5" placeholder="남길 말씀이 있다면 여기에"></textarea>
+                        </li>
+                    </ul>
+                </fieldset>
+
+                <fieldset>
+                    <legend>이벤트와 새로운 소식</legend>
+                    <input name="mail_receive" type="radio" value="yes">메일 수신
+                    <input name="mail_receive" type="radio" value="no">메일 수신 안 함
+                </fieldset>
+
+                <input id="join" type="button" value="가입하기">
+                <input id="cancel" type="button" value="취소">
+            </form>
+        </div>
+    </body>
+</html>
